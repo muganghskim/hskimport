@@ -25,6 +25,30 @@ window.addEventListener("scroll",function(){
     leftText[0].style.right = (scTop / 3) + "px";
     leftText[1].style.right = (scTop / 5) + "px";
     leftText[2].style.right = (scTop / 8) + "px";
+
+    //body 태그의 높이값(문서의 높이값)
+    let scrollHeight = document.body.clientHeight;
+            
+    //body 태그의 높이값에서  웹브라우저 화면의 높이값을 빼줌
+    let scrollRealHeight = scrollHeight - window.innerHeight;
+
+    //스크롤바의 위치값
+    let windowScrollValue = window.scrollY;
+
+    //스크롤바의 위치값을 백분율 %로 변환
+    let scrollPercent = (windowScrollValue / scrollRealHeight) * 100;
+    
+    //게이지가 차는 부분 구현
+    document.querySelector(".topGage").style.width = scrollPercent + "%";
+    if(scrollPercent >= 0 && scrollPercent <= 50){
+        document.querySelector(".topGage").style.backgroundColor = "rgba(15,166,15,0.9416141456582633)";
+    }
+    else if(scrollPercent <= 75 && scrollPercent >= 51){
+        document.querySelector(".topGage").style.backgroundColor = "rgba(227,140,25,0.9416141456582633)";
+    }
+    else{
+        document.querySelector(".topGage").style.backgroundColor = "rgba(157,25,227,0.9416141456582633)";
+    }
 });
 
 //gnb 클릭시 구역별로 나타내기

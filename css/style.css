@@ -26,6 +26,13 @@ body {
   left: 0;
   top: 0;
 }
+#header .topGage {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 3px;
+}
 #header .center .gnb {
   display: flex;
   margin-left: 30px;
@@ -301,6 +308,14 @@ body {
   margin-bottom: 20px;
   color: rgba(227, 140, 25, 0.9416141457);
   cursor: pointer;
+  transition: all 0.5s;
+}
+#container .portfolio .center .left .info h4:hover {
+  text-decoration: underline;
+}
+#container .portfolio .center .left .info h4.on {
+  font-size: 22px;
+  text-decoration: underline;
 }
 #container .portfolio .center .left .info p {
   font-size: 16px;

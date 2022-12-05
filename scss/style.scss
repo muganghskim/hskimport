@@ -10,6 +10,7 @@ body{line-height: 1;font-family: 'Noto Serif KR', serif;}
     z-index: 12;
     left: 0;
     top: 0;
+    .topGage {position: fixed; left: 0; top: 0; width: 0%; height: 3px;}
     .center{
         .gnb{
             display: flex;
@@ -279,6 +280,14 @@ body{line-height: 1;font-family: 'Noto Serif KR', serif;}
                         margin-bottom: 20px;
                         color: rgba(227,140,25,0.9416141456582633);
                         cursor: pointer;
+                        transition: all 0.5s;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    h4.on{
+                        font-size: 22px;
+                        text-decoration: underline;
                     }
                     p{
                         font-size: 16px;

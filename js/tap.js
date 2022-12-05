@@ -6,6 +6,7 @@ const tabviewsport2 = document.querySelectorAll(".porttabWrap .list");
 
 tabviews[0].classList.add("on");
 tabviews2[0].classList.add("on");
+tabs2[0].classList.add("on");
 tabviewsport2[0].classList.add("on");
 
 tabs.forEach(function(item,index){
