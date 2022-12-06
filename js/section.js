@@ -47,7 +47,7 @@ window.addEventListener("scroll",function(){
         document.querySelector(".topGage").style.backgroundColor = "rgba(227,140,25,0.9416141456582633)";
     }
     else{
-        document.querySelector(".topGage").style.backgroundColor = "rgba(157,25,227,0.9416141456582633)";
+        document.querySelector(".topGage").style.backgroundColor = "rgba(227,25,107,0.9416141456582633)";
     }
 });
 
